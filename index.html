@@ -367,6 +367,14 @@ html[data-ui="en"] .stamp{font-size:15px;letter-spacing:.1em}
 @media (max-width:640px){
   .booths,.extras ul{grid-template-columns:minmax(0,1fr)}
 }
+/* お詫びと訂正 */
+.notice{border:1px solid var(--vermilion);background:rgba(196,48,38,.13);padding:18px 22px;display:flex;flex-direction:column;gap:8px}
+.notice h2{margin:0;display:flex;align-items:center;gap:8px;font-weight:400;font-size:17px;letter-spacing:.12em;color:#ffb3a6}
+.notice h2 svg{width:20px;height:20px;flex:none}
+.notice p{margin:0;font-size:15px;line-height:1.9}
+.notice strong{font-weight:400;color:var(--gold);font-size:1.1em}
+.n-date{text-align:right;font-size:12px!important;color:rgba(246,238,222,.6);letter-spacing:.08em}
+.fix-link{font-size:12px;letter-spacing:.1em;color:#ffb3a6;text-decoration:none;border-bottom:1px solid rgba(255,179,166,.5);margin-top:-2px}
 @media (max-aspect-ratio:3/4){
   .branch{width:clamp(240px,74vw,520px)}
   .title{--c:clamp(84px,26vw,200px)}
@@ -431,7 +439,8 @@ html[data-ui="en"] .stamp{font-size:15px;letter-spacing:.1em}
   </header>
   <div class="info">
     <p class="edition rise" style="--dl:.5s"><span class="rule"></span><span class="dia"></span><b data-i18n="edition">第58回　流高祭</b><span class="dia"></span><span class="rule"></span></p>
-    <p class="date rise" style="--dl:.62s"><span class="md" data-i18n="date">10月18日</span><span class="box" data-i18n="open">一般公開</span></p>
+    <p class="date rise" style="--dl:.62s"><span class="md" data-i18n="date">10月31日</span><span class="box" data-i18n="open">一般公開</span></p>
+    <a class="fix-link rise" style="--dl:.68s" href="#notice">※<span data-l="ja">公開日訂正のお詫び</span><span data-l="en">Date correction</span><span data-l="zh-Hans" lang="zh-Hans">开放日期更正致歉</span><span data-l="zh-Hant" lang="zh-Hant">開放日期更正致歉</span><span data-l="vi" lang="vi">Đính chính ngày mở cửa</span><span data-l="bn" lang="bn">তারিখ সংশোধনী</span></a>
     <div class="divider rise" style="--dl:.74s" aria-hidden="true"><span class="ln"></span><span class="kn"></span><span class="ln"></span></div>
     <a class="fes-link rise" style="--dl:.86s" href="https://ngry26fes.vercel.app" target="_blank" rel="noopener"><span data-i18n="fesLink">流高祭 特設サイト（生徒会運営）</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4H4v12h12v-4M11 3h6v6M17 3 9 11"/></svg></a>
     <a class="cue rise" style="--dl:1s" href="#about"><span data-i18n="cue">写真館について</span><svg viewBox="0 0 16 10" aria-hidden="true"><path d="M1 1l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -440,6 +449,11 @@ html[data-ui="en"] .stamp{font-size:15px;letter-spacing:.1em}
 
 <section class="sheet" id="about" aria-labelledby="about-h">
   <div class="wrap">
+    <aside class="notice" id="notice" aria-labelledby="notice-h">
+      <h2 id="notice-h"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.2v.3"/></svg><span data-l="ja">お詫びと訂正</span><span data-l="en">Correction</span><span data-l="zh-Hans" lang="zh-Hans">致歉与更正</span><span data-l="zh-Hant" lang="zh-Hant">致歉與更正</span><span data-l="vi" lang="vi">Đính chính</span><span data-l="bn" lang="bn">সংশোধনী</span></h2>
+      <p><span data-l="ja">本サイトにおいて、一般公開日を「10月18日」と記載しておりましたが、正しくは「<strong>10月31日</strong>」です。ここに訂正いたしますとともに、ご迷惑をおかけしましたことを深くお詫び申し上げます。</span><span data-l="en">We previously listed the public open day as October 18. The correct date is <strong>October 31</strong>. We sincerely apologize for any confusion this may have caused.</span><span data-l="zh-Hans" lang="zh-Hans">本网站此前将对外开放日误写为「10月18日」，正确日期为「<strong>10月31日</strong>」。特此更正，并对给您带来的不便深表歉意。</span><span data-l="zh-Hant" lang="zh-Hant">本網站先前將對外開放日誤寫為「10月18日」，正確日期為「<strong>10月31日</strong>」。特此更正，並對造成您的不便深表歉意。</span><span data-l="vi" lang="vi">Trước đây trang web ghi ngày mở cửa cho công chúng là 18/10. Ngày chính xác là <strong>31/10</strong>. Chúng tôi thành thật xin lỗi vì sự nhầm lẫn này.</span><span data-l="bn" lang="bn">এই সাইটে আগে জনসাধারণের জন্য উন্মুক্ত দিনটি ভুলবশত ১৮ অক্টোবর লেখা ছিল। সঠিক তারিখ <strong>৩১ অক্টোবর</strong>। এই বিভ্রান্তির জন্য আমরা আন্তরিকভাবে দুঃখিত।</span></p>
+      <p class="n-date"><span data-l="ja">2026年10月22日　写真部</span><span data-l="en">Oct. 22, 2026 — Photography Club</span><span data-l="zh-Hans" lang="zh-Hans">2026年10月22日　摄影部</span><span data-l="zh-Hant" lang="zh-Hant">2026年10月22日　攝影部</span><span data-l="vi" lang="vi">22/10/2026 — CLB Nhiếp ảnh</span><span data-l="bn" lang="bn">২২ অক্টোবর ২০২৬ — ফটোগ্রাফি ক্লাব</span></p>
+    </aside>
     <header class="sec-head">
       <p class="label">ABOUT</p>
       <h2 id="about-h"><span data-l="ja">写真部の写真館とは</span><span data-l="en">About the Photo Studio</span><span data-l="zh-Hans" lang="zh-Hans">摄影部的照相馆是什么</span><span data-l="zh-Hant" lang="zh-Hant">攝影部的照相館是什麼</span><span data-l="vi" lang="vi">Giới thiệu Tiệm ảnh</span><span data-l="bn" lang="bn">ফটো স্টুডিও পরিচিতি</span></h2>
@@ -480,7 +494,7 @@ html[data-ui="en"] .stamp{font-size:15px;letter-spacing:.1em}
 
     <dl class="facts">
       <div><dt><span data-l="ja">会場</span><span data-l="en">Venue</span><span data-l="zh-Hans" lang="zh-Hans">会场</span><span data-l="zh-Hant" lang="zh-Hant">會場</span><span data-l="vi" lang="vi">Địa điểm</span><span data-l="bn" lang="bn">স্থান</span></dt><dd><span data-l="ja">本館3階 309教室<small>（社会科教室）</small></span><span data-l="en">Room 309, Main Bldg. 3F<small>(Social Studies Room)</small></span><span data-l="zh-Hans" lang="zh-Hans">本馆3楼 309教室<small>（社会科教室）</small></span><span data-l="zh-Hant" lang="zh-Hant">本館3樓 309教室<small>（社會科教室）</small></span><span data-l="vi" lang="vi">Phòng 309, tầng 3 tòa nhà chính<small>(Phòng Xã hội)</small></span><span data-l="bn" lang="bn">কক্ষ ৩০৯, মূল ভবনের ৩য় তলা<small>(সমাজবিজ্ঞান কক্ষ)</small></span></dd></div>
-      <div><dt><span data-l="ja">日程</span><span data-l="en">Date</span><span data-l="zh-Hans" lang="zh-Hans">日期</span><span data-l="zh-Hant" lang="zh-Hant">日期</span><span data-l="vi" lang="vi">Ngày</span><span data-l="bn" lang="bn">তারিখ</span></dt><dd><span data-l="ja">10月18日<small>（一般公開）</small></span><span data-l="en">Oct. 18<small>(Open to the Public)</small></span><span data-l="zh-Hans" lang="zh-Hans">10月18日<small>（对外开放）</small></span><span data-l="zh-Hant" lang="zh-Hant">10月18日<small>（對外開放）</small></span><span data-l="vi" lang="vi">Ngày 18/10<small>(mở cửa cho công chúng)</small></span><span data-l="bn" lang="bn">১৮ অক্টোবর<small>(সবার জন্য উন্মুক্ত)</small></span></dd></div>
+      <div><dt><span data-l="ja">日程</span><span data-l="en">Date</span><span data-l="zh-Hans" lang="zh-Hans">日期</span><span data-l="zh-Hant" lang="zh-Hant">日期</span><span data-l="vi" lang="vi">Ngày</span><span data-l="bn" lang="bn">তারিখ</span></dt><dd><span data-l="ja">10月31日<small>（一般公開）</small></span><span data-l="en">Oct. 31<small>(Open to the Public)</small></span><span data-l="zh-Hans" lang="zh-Hans">10月31日<small>（对外开放）</small></span><span data-l="zh-Hant" lang="zh-Hant">10月31日<small>（對外開放）</small></span><span data-l="vi" lang="vi">Ngày 31/10<small>(mở cửa cho công chúng)</small></span><span data-l="bn" lang="bn">৩১ অক্টোবর<small>(সবার জন্য উন্মুক্ত)</small></span></dd></div>
     </dl>
   </div>
 </section>
@@ -884,18 +898,18 @@ html[data-ui="en"] .stamp{font-size:15px;letter-spacing:.1em}
 /* ---- 言語切り替え・メニュー ---- */
 (() => {
   const T = {
-    ja: { edition:'第58回　流高祭', date:'10月18日', open:'一般公開', prep:'サイト準備中', cue:'写真館について', magazine:'部活動誌', exhibits:'出展物紹介', works:'作品紹介', soonTag:'準備中',
+    ja: { edition:'第58回　流高祭', date:'10月31日', open:'一般公開', prep:'サイト準備中', cue:'写真館について', magazine:'部活動誌', exhibits:'出展物紹介', works:'作品紹介', soonTag:'準備中',
       fesLink:'流高祭 特設サイト（生徒会運営）', home:'ホーム', soon:'そのほかのページは準備中です',
       related:'関連リンク', extTitle:'流高祭 特設サイト', extSub:'生徒会運営', foot:'千葉県立流山高等学校 写真部',
       menuOpen:'メニューを開く', menuClose:'メニューを閉じる', langLabel:'言語', site:'写真部の写真館' },
-    en: { edition:'The 58th Ryukosai', date:'Oct. 18', open:'Open to the Public', prep:'Site coming soon', cue:'About the studio', magazine:'Club Magazine', exhibits:'Exhibits', works:'Gallery', soonTag:'Coming soon',
+    en: { edition:'The 58th Ryukosai', date:'Oct. 31', open:'Open to the Public', prep:'Site coming soon', cue:'About the studio', magazine:'Club Magazine', exhibits:'Exhibits', works:'Gallery', soonTag:'Coming soon',
       fesLink:'Ryukosai Official Site (Student Council)', home:'Home', soon:'More pages are on the way.',
       related:'Related links', extTitle:'Ryukosai Official Site', extSub:'Run by the Student Council', foot:'Nagareyama High School Photography Club',
       menuOpen:'Open menu', menuClose:'Close menu', langLabel:'Language', site:'Photo Studio' },
-    'zh-Hans': {"edition": "第58届　流高祭", "date": "10月18日", "open": "对外开放", "prep": "网站准备中", "cue": "关于照相馆", "magazine": "社团刊物", "exhibits": "展品介绍", "works": "作品介绍", "soonTag": "准备中", "fesLink": "流高祭 特设网站（学生会运营）", "home": "首页", "soon": "", "related": "相关链接", "extTitle": "流高祭 特设网站", "extSub": "学生会运营", "foot": "千叶县立流山高中 摄影部", "menuOpen": "打开菜单", "menuClose": "关闭菜单", "langLabel": "语言", "site": "摄影部的照相馆"},
-    'zh-Hant': {"edition": "第58屆　流高祭", "date": "10月18日", "open": "對外開放", "prep": "網站準備中", "cue": "關於照相館", "magazine": "社團刊物", "exhibits": "展品介紹", "works": "作品介紹", "soonTag": "準備中", "fesLink": "流高祭 特設網站（學生會營運）", "home": "首頁", "soon": "", "related": "相關連結", "extTitle": "流高祭 特設網站", "extSub": "學生會營運", "foot": "千葉縣立流山高中 攝影部", "menuOpen": "開啟選單", "menuClose": "關閉選單", "langLabel": "語言", "site": "攝影部的照相館"},
-    'vi': {"edition": "Ryukosai lần thứ 58", "date": "Ngày 18/10", "open": "Mở cửa cho công chúng", "prep": "Trang web đang chuẩn bị", "cue": "Giới thiệu Tiệm ảnh", "magazine": "Tạp chí CLB", "exhibits": "Giới thiệu triển lãm", "works": "Tác phẩm", "soonTag": "Sắp ra mắt", "fesLink": "Trang Ryukosai (Hội học sinh)", "home": "Trang chủ", "soon": "", "related": "Liên kết", "extTitle": "Trang chính thức Ryukosai", "extSub": "Do Hội học sinh vận hành", "foot": "CLB Nhiếp ảnh, Trường THPT Nagareyama", "menuOpen": "Mở menu", "menuClose": "Đóng menu", "langLabel": "Ngôn ngữ", "site": "Tiệm ảnh CLB Nhiếp ảnh"},
-    'bn': {"edition": "৫৮তম রিউকোসাই", "date": "১৮ অক্টোবর", "open": "সবার জন্য উন্মুক্ত", "prep": "ওয়েবসাইট প্রস্তুত হচ্ছে", "cue": "ফটো স্টুডিও পরিচিতি", "magazine": "ক্লাব পত্রিকা", "exhibits": "প্রদর্শনী পরিচিতি", "works": "শিল্পকর্ম", "soonTag": "শীঘ্রই আসছে", "fesLink": "রিউকোসাই অফিসিয়াল সাইট (ছাত্র পরিষদ)", "home": "হোম", "soon": "", "related": "সম্পর্কিত লিংক", "extTitle": "রিউকোসাই অফিসিয়াল সাইট", "extSub": "ছাত্র পরিষদ পরিচালিত", "foot": "নাগারেয়ামা হাই স্কুল ফটোগ্রাফি ক্লাব", "menuOpen": "মেনু খুলুন", "menuClose": "মেনু বন্ধ করুন", "langLabel": "ভাষা", "site": "ফটোগ্রাফি ক্লাবের ফটো স্টুডিও"}
+    'zh-Hans': {"edition": "第58届　流高祭", "date": "10月31日", "open": "对外开放", "prep": "网站准备中", "cue": "关于照相馆", "magazine": "社团刊物", "exhibits": "展品介绍", "works": "作品介绍", "soonTag": "准备中", "fesLink": "流高祭 特设网站（学生会运营）", "home": "首页", "soon": "", "related": "相关链接", "extTitle": "流高祭 特设网站", "extSub": "学生会运营", "foot": "千叶县立流山高中 摄影部", "menuOpen": "打开菜单", "menuClose": "关闭菜单", "langLabel": "语言", "site": "摄影部的照相馆"},
+    'zh-Hant': {"edition": "第58屆　流高祭", "date": "10月31日", "open": "對外開放", "prep": "網站準備中", "cue": "關於照相館", "magazine": "社團刊物", "exhibits": "展品介紹", "works": "作品介紹", "soonTag": "準備中", "fesLink": "流高祭 特設網站（學生會營運）", "home": "首頁", "soon": "", "related": "相關連結", "extTitle": "流高祭 特設網站", "extSub": "學生會營運", "foot": "千葉縣立流山高中 攝影部", "menuOpen": "開啟選單", "menuClose": "關閉選單", "langLabel": "語言", "site": "攝影部的照相館"},
+    'vi': {"edition": "Ryukosai lần thứ 58", "date": "Ngày 31/10", "open": "Mở cửa cho công chúng", "prep": "Trang web đang chuẩn bị", "cue": "Giới thiệu Tiệm ảnh", "magazine": "Tạp chí CLB", "exhibits": "Giới thiệu triển lãm", "works": "Tác phẩm", "soonTag": "Sắp ra mắt", "fesLink": "Trang Ryukosai (Hội học sinh)", "home": "Trang chủ", "soon": "", "related": "Liên kết", "extTitle": "Trang chính thức Ryukosai", "extSub": "Do Hội học sinh vận hành", "foot": "CLB Nhiếp ảnh, Trường THPT Nagareyama", "menuOpen": "Mở menu", "menuClose": "Đóng menu", "langLabel": "Ngôn ngữ", "site": "Tiệm ảnh CLB Nhiếp ảnh"},
+    'bn': {"edition": "৫৮তম রিউকোসাই", "date": "৩১ অক্টোবর", "open": "সবার জন্য উন্মুক্ত", "prep": "ওয়েবসাইট প্রস্তুত হচ্ছে", "cue": "ফটো স্টুডিও পরিচিতি", "magazine": "ক্লাব পত্রিকা", "exhibits": "প্রদর্শনী পরিচিতি", "works": "শিল্পকর্ম", "soonTag": "শীঘ্রই আসছে", "fesLink": "রিউকোসাই অফিসিয়াল সাইট (ছাত্র পরিষদ)", "home": "হোম", "soon": "", "related": "সম্পর্কিত লিংক", "extTitle": "রিউকোসাই অফিসিয়াল সাইট", "extSub": "ছাত্র পরিষদ পরিচালিত", "foot": "নাগারেয়ামা হাই স্কুল ফটোগ্রাফি ক্লাব", "menuOpen": "মেনু খুলুন", "menuClose": "মেনু বন্ধ করুন", "langLabel": "ভাষা", "site": "ফটোগ্রাফি ক্লাবের ফটো স্টুডিও"}
   };
   let lang = 'ja';
   try { const v = localStorage.getItem('photostudio-lang'); if (T[v]) lang = v; } catch (e) {}
@@ -941,9 +955,9 @@ html[data-ui="en"] .stamp{font-size:15px;letter-spacing:.1em}
         if (a.dataset.routeLink === r) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
       });
       current = r;
-      if (h !== 'about') window.scrollTo({ top: 0, behavior: 'instant' });
+      if (h !== 'about' && h !== 'notice') window.scrollTo({ top: 0, behavior: 'instant' });
     }
-    if (h === 'about') requestAnimationFrame(() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' }));
+    if (h === 'about' || h === 'notice') requestAnimationFrame(() => document.getElementById(h).scrollIntoView({ behavior: 'smooth', block: h === 'notice' ? 'center' : 'start' }));
     setTitle();
   }
   function setTitle() {
